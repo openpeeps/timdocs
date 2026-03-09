@@ -1,6 +1,6 @@
 ---
 title: "Installation"
-description: "🚀 Get Tim Engine up and running in no time! Follow our simple installation"
+description: "Install Tim Engine on your system using various methods"
 ---
 
 
