@@ -7,12 +7,13 @@ Tim Engine's syntax is indentation-based, similar to **Nim**, **Ruby** or **Pyth
 
 
 ## Quick Example
-Here is a simple example of Tim syntax that generates a basic HTML structure using **Bootstrap 5** classes:
+Here is a simple example of Tim syntax for a basic HTML structure using **Bootstrap 5**:
 ```
 div.container > div.row > div.col-12
-  h1.title: "Welcome to Tim Engine!"
-  p.description: "Tim Engine is a powerful templating engine and scripting language for developers."
-  a.btn.btn-primary.px-4 href="https://example.com": "Get Started"
+  h1.display-4.fw-bold: "Welcome to Tim Engine!"
+  p.lead: "Tim Engine is a powerful templating engine and scripting language for developers."
+  a.btn.btn-primary.px-4.rounded-3
+    href="https://example.com": "Get Started"
 ```
 
 ## Syntax - Basics

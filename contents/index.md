@@ -4,7 +4,7 @@ description: "👋 This is Tim Engine &mdash; The Great Pantzini &bullet; The Re
 ---
 
 ## About 👺 Tim Engine
-Tim Engine is a templating engine and scripting language designed to help developers create dynamic and interactive documentation websites with ease. It provides a simple yet powerful syntax for generating web pages like a boss.
+Tim Engine is a **templating engine** and **scripting language** designed to help developers create dynamic and interactive documentation websites with ease. It provides a simple yet powerful syntax for generating web pages like a boss.
 
 Tim is **single-file binary CLI application** that can be easily integrated into your development workflow.
 
@@ -15,15 +15,15 @@ Tim is **single-file binary CLI application** that can be easily integrated into
 ## 😍 Key Features
 Here are some of the key features that make Booyaka stand out
 
-- 🔥 **Compiled**, extremely **Lightweight** and **Super Fast!**
-- 🌍 **Cross-platform** CLI application (Linux, macOS, Windows)
-- 🧑‍💻 **Powerful Scripting Language** (vars, functions, control structures, and more)
-- 🧑‍🎨 **Clean and Intuitive Syntax** combining Haml, Pug and Emmet styles
+- **Compiled**, extremely **Lightweight** and **Super Fast!**
+- **Cross-platform** CLI application (Linux, macOS, Windows)
+- **Powerful Scripting Language** (vars, functions, control structures, and more)
+- **Clean and Intuitive Syntax** combining Haml, Pug and Emmet styles
 - 🧩 **Extensible** with support for custom functions and plugins
-- 🍥 Source-to-Source transpiler (**Lua**, **Nim**, **Ruby**, **Python**, **JavaScript** and **PHP**)
-- 🔁 Built-in **Live Reloading** for seamless development experience
-- 🎩 **Open Source** | **LGPLv3** License
-- 👑 Written in **Nim language** | **Made by Humans from OpenPeeps**
+- Source-to-Source transpiler (**Lua**, **Nim**, **Ruby**, **Python**, **JavaScript** and **PHP**)
+- Built-in **Live Reloading** for seamless development experience
+- **Open Source** | **LGPLv3** License 🎩
+- Written in 👑 **Nim language** | **Made by Humans from OpenPeeps**
 
 ## 🚀 Getting Started
 For installation instructions, check out the [Installation page](/installation). To learn how to use Tim Engine and its syntax, head over to the [Syntax page](/syntax).

@@ -8,9 +8,9 @@ keywords: ["control flow", "tim engine", "if statements", "loops", "documentatio
 If statements allow you to execute a block of code based on a condition. In Tim Engine, you can use `if`, `elif`, and `else` to create conditional statements. For example:
 ```
 var age: int = 25
-if age < 18:
+if $age < 18:
   p: "You are a minor."
-elif age >= 18 and age < 65:
+elif $age >= 18 and $age < 65:
   p: "You are an adult."
 else:
   p: "You are a senior."
@@ -22,7 +22,7 @@ For loops allow you to iterate over a sequence of values. In Tim Engine, you can
 
 ```
 var fruits = ["apple", "banana", "cherry"]
-for $fruit in fruits:
+for $fruit in $fruits:
   p: "I like " & $fruit
 ```
 

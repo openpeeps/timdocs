@@ -5,7 +5,7 @@ description: "Install Tim Engine on your system using various methods"
 
 
 ## Building from Source
-To install Tim Engine, you can use `nimble` to build from source. Read the [Nim installation guide](https://nim-lang.org/install.html) if you don't have Nim installed.
+To install Tim Engine, you can use `nimble` to build from source. Check the Nim [installation guide](https://nim-lang.org/install.html) if you don't have Nim installed.
 
 Once you have Nim installed, you can run the following command to install Tim Engine:
 ```
