@@ -8,12 +8,12 @@ keywords: ["control flow", "tim engine", "if statements", "loops", "documentatio
 If statements allow you to execute a block of code based on a condition. In Tim Engine, you can use `if`, `elif`, and `else` to create conditional statements. For example:
 ```
 var fruits = ["apple", "banana", "cherry", "apricot", "avocado"]
-if shuffle($fruits)[0] == "apple":
+if $fruits[0] == "apple":
   p: "This is an apple."
-elif $fruit == "banana":
+elif $fruits[1] == "banana":
   p: "This is a banana."
 else:
-  p: "This is " & $fruit & "."
+  p: "This is a fruit."
 ```
 
 ## For loops
@@ -41,15 +41,18 @@ while $count < 5:
   inc($count)
 ```
 
-## Break and continue
-You can use `break` to exit a loop early, and `continue` to skip the rest of the current iteration and move to the next one. 
-Both `break` and `continue` can be used in `for` and `while` loops. For example:
+## Break
+You can use `break` to exit a loop early. For example:
 ```
-for $i in 0..10:
-  if $i == 5:
-    break  // exit the loop when i is 5
-  if $i % 2 == 0:
-    continue  // skip even numbers
-  p: "The value of i is " & $i
+var count: int = 0
+while $count < 10 {
+  if $count == 5:
+    break  // exit the loop when count is 5
+  p: "The value of count is " & $count
+  inc($count)
+}
 ```
+
+> [!NOTE]
+> `break` is fully supported in `while` loops. `break` and `continue` inside `for` loops are not yet implemented — avoid them for now. `continue` is recognized by the lexer but not implemented in the engine.
 

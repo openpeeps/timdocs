@@ -14,6 +14,15 @@ Manage packages in Tim Engine:
 ### Package location
 Tim Engine looks for packages in the `~/.tim/packages` directory. This directory is automatically created when you use Tim Engine for the first time. When you install a package using the package manager, it will be downloaded and stored in this directory.
 
+### Package manager commands
+The CLI ships with the following package commands:
+
+- `tim init` — initialize a new package or project structure
+- `tim remove <pkg>` — remove an installed package
+- `tim develop <pkg>` — create a symlink to a package in local source *(work in progress)*
+- `tim install <github-url>` — install a package from a remote source *(work in progress)*
+- `tim publish` — publish a package to the registry *(not yet available)*
+
 ### Developing packages
 When developing a package, you can create a symbolic link from your package directory to the `~/.tim/packages` directory. This allows you to test your package locally without having to publish it. For example:
 ```

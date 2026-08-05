@@ -24,30 +24,66 @@ The `std/arrays` library provides various functions for manipulating arrays, suc
 
 ##### `add`
 ```
-function add*(arr: array, item: any): array
+fn add(s: array, item: any)
 ```
-Add a new item to the end of an array.
+Append a new item to the end of an array. The array is modified in place.
 
 ##### `insert`
 ```
-function insert*(arr: array, item: any, offset: int): array
+fn insert(s: array, item: any, offset: int)
 ```
-Insert an item into an array at a specific index.
+Insert an item into an array at a specific index. The array is modified in place.
 
 ##### `delete`
 ```
-function delete*(arr: array, index: int): array
+fn delete(s: array, offset: int)
 ```
-Delete an item from an array at a specific index.
-
-##### `join`
-```
-function join*(arr: array, separator: string): string
-```
-Join the elements of an array into a single string, separated by a specified separator.
+Delete an item from an array at a specific index. The array is modified in place.
 
 ##### `contains`
 ```
-function contains*(arr: array, item: any): boolean
+fn contains(arr: array, x: string): bool
 ```
-Check if an array contains a specific item.
+Check if an array contains a specific value.
+
+##### `find`
+```
+fn find(s: array, item: any): int
+```
+Return the index of the first occurrence of `item` in the array, or `-1` if it is not found.
+
+##### `join`
+```
+fn join(s: array): string
+```
+Join the elements of an array of strings into a single string, separated by `", "`.
+
+##### `dedup`
+```
+fn dedup(s: array)
+```
+Remove duplicate values from an array (by value). The array is modified in place.
+
+##### `isEmpty`
+```
+fn isEmpty(arr: array): bool
+```
+Check if the array has no elements.
+
+##### `first`
+```
+fn first(arr: array): any
+```
+Return the first element of the array.
+
+##### `last`
+```
+fn last(arr: array): any
+```
+Return the last element of the array.
+
+##### `reverse`
+```
+fn reverse(arr: array): array
+```
+Return a new array with the elements in reversed order.

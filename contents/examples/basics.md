@@ -6,10 +6,6 @@ keywords: ["Tim Engine", "examples", "basics", "HTML templates", "scripting"]
 
 We are going to cover some basic examples of using Tim Engine to create HTML templates and scripts. These examples will demonstrate the core features of Tim Engine and how to use them effectively. We are going to use Bootstrap for styling in our examples, but you can use any CSS framework or custom styles you prefer.
 
-<div class="alert alert-info rounded-4" role="alert">
-  <div class="alert-content">A Bootstrap port is in progress, so the examples here will be updated to use macro-based components instead of raw HTML in the near future. Stay tuned for updates!</div>
-</div>
-
 
 ## Basic HTML Template
 Here's a simple example of a Tim Engine template that generates a basic HTML page:
@@ -32,7 +28,7 @@ html
 ```text
 div.mb-3
   label.form-label for="exampleFormControlInput1": "Email address"
-  input.form-control type="email" id="exampleFormControlInput1" placeholder="name
+  input.form-control type="email" id="exampleFormControlInput1" placeholder="name@example.com"
 
 div.mb-3
   label.form-label for="exampleFormControlTextarea1": "Example textarea"
@@ -42,7 +38,7 @@ div.mb-3
 
 ### Create a modal
 ```text
-div.modal tabindex="-1 > div.modal-dialog > div.modal-content
+div.modal tabindex="-1" > div.modal-dialog > div.modal-content
   div.modal-header
     h5.modal-title: "Modal title"
     button.btn-close type="button" data-bs-dismiss="modal" aria-label="Close"

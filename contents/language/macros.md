@@ -11,10 +11,10 @@ Macros in Tim Engine can be used to create reusable components, elements or temp
 Here is an example of a simple macro that generates a button component:
 ```
 macro PrimaryButton(label: string, url: string) =
-  a.btn.btn-primary title=$label href=url: $label
+  a.btn.btn-primary href=$url: $label
 ```
 
-Calling a macro implies prefixing it with a `@` symbol. For example, to use the `Button` macro we defined above, you can do:
+Calling a macro implies prefixing it with a `@` symbol. For example, to use the `PrimaryButton` macro we defined above, you can do:
 ```
 @PrimaryButton("Click Me", "https://example.com")
 ```
@@ -38,7 +38,7 @@ As you can see, macros allow you abstract away complex HTML structures and reuse
 Macros accept trailing statements, which allows you to pass a block of code to the macro. This is useful for creating more flexible components that can accept **varying content**. Here's an example of a macro that generates a Bootstrap column and accepts trailing statements for the content:
 ```
 macro col(width: int) =
-  div.col-lg-$(width):
+  div.col class="col-lg-" & $width:
     @statement
 ```
 
@@ -50,7 +50,7 @@ Calling this macro with trailing statements would look like this:
 
 This will generate a Bootstrap column with the specified width and the content:
 ```html
-<div class="col-lg-6">
+<div class="col col-lg-6">
   <p>This is some content inside the column.</p>
 </div>
 ```
@@ -65,5 +65,8 @@ Calling the `col` macro without trailing statements will simply generate an empt
 
 the inner `@statement` won't have any content to render, so the generated HTML will be:
 ```html
-<div class="col-lg-6"></div>
+<div class="col col-lg-6"></div>
 ```
+
+> [!NOTE]
+> When referencing macro parameters inside attributes or class names, interpolate them with the `$` prefix (e.g. `class="col-lg-" & $width` or `title=$label`).

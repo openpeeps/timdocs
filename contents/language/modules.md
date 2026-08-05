@@ -16,8 +16,18 @@ To import a module in Tim Engine, you can use the `@import` statement followed b
 ## Standard library modules
 Tim Engine comes with a [standard library](/libraries) that provides a wide range of built-in functions and modules for common tasks. You can import standard library modules using the `@import` statement with the module name. For example:
 ```
-@import "std/math"
+@import "std/json"
 ```
+
+The following standard library modules are currently available:
+
+- `std/system` — automatically imported into every template; provides the built-in operators and core functions
+- `std/strings` — string manipulation functions
+- `std/arrays` — array manipulation functions
+- `std/objects` — object manipulation functions
+- `std/json` — JSON parsing, serialization and utilities
+
+The `system` module is always available without an explicit import. The math, times, email and FFI modules are planned but are not yet importable as standalone `std/...` modules.
 
 ## External packages
 If you have installed external packages using the package manager, you can import modules from those packages as well. The syntax is the same as importing local modules, but you need to prefix the import path with the `pkg` keyword. For example:

@@ -1,5 +1,5 @@
 metadata:
-  logo: "https://raw.githubusercontent.com/openpeeps/tim/main/.github/timV2.png"
+  logo: "https://raw.githubusercontent.com/tim-engine/tim/main/.github/timV2.png"
   logo_keep_gradient: true
   title: "Tim Engine Documentation"
   description: "Documentation page for Tim Engine - a powerful template engine and scripting language for developers."
@@ -66,10 +66,10 @@ content:
 
 navbar:
   - title: "GitHub Repository"
-    url: "https://github.com/openpeeps/tim"
+    url: "https://github.com/tim-engine/tim"
     icon: ""
   - title: "API Reference"
-    url: "https://openpeeps.github.io/tim/theindex.html"
+    url: "https://tim-engine.github.io/tim/theindex.html"
     icon: "icon-book"
 
 sidebar_navigation:
@@ -99,19 +99,26 @@ sidebar_navigation:
 
   - name: "Standard Library"
     items:
+      - title: "Overview"
+        url: "/libraries"
       - title: "System"
         url: "/libraries/system"
-      - title: "Math"
-        url: "/libraries/math"
       - title: "Strings"
         url: "/libraries/strings"
       - title: "Arrays"
         url: "/libraries/arrays"
       - title: "Objects"
         url: "/libraries/objects"
+      - title: "JSON"
+        url: "/libraries/json"
       - title: "User Scripts"
         url: "/libraries/user-scripts"
-  
+
+  - name: "Runtime"
+    items:
+      - title: "HTTP Server & Config"
+        url: "/server"
+
   - name: "Package Manager"
     items:
       - title: "Manage Packages"
@@ -130,13 +137,18 @@ sidebar_navigation:
 
   - name: "Source to Source"
     items:
-      - title: "Transpilation Overview"
+      - title: "Tim Transpilers"
         url: "/transpilation/overview"
+
+  - name: "Releases"
+    items:
+      - title: "Changelog"
+        url: "/changelog"
 
 extra_sections:
   left_sidebar:
     - content: |
-        <a class="p-0 no-external" href="https://github.com/openpeeps/booyaka/issues" target="_blank">
+        <a class="p-0 no-external" href="https://github.com/tim-engine/tim/issues" target="_blank">
           <div class="card border-2 rounded-4" style="border-style: dotted;">
             <div class="card-body small p-2 lh-sm justify-content-center d-flex align-items-center user-select-none">
               <div class="bg-warning flex-shrink-0 rounded-pill p-1 me-2">
@@ -153,5 +165,5 @@ footer:
   text: ""
   links:
     - title: "GitHub"
-      url: "https://github.com/example"
+      url: "https://github.com/tim-engine/tim"
       icon: "icon-brand-github"
